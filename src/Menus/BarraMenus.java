@@ -27,12 +27,49 @@ public class BarraMenus extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        Escritorio = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        SubRegistrarProducto = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         SubEliminarProductos = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
+        SubActualizarProducto = new javax.swing.JMenu();
+
+        jMenu5.setText("File");
+        jMenuBar2.add(jMenu5);
+
+        jMenu6.setText("Edit");
+        jMenuBar2.add(jMenu6);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout EscritorioLayout = new javax.swing.GroupLayout(Escritorio);
+        Escritorio.setLayout(EscritorioLayout);
+        EscritorioLayout.setHorizontalGroup(
+            EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 996, Short.MAX_VALUE)
+        );
+        EscritorioLayout.setVerticalGroup(
+            EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 670, Short.MAX_VALUE)
+        );
+
+        jMenu3.setText("REGISTRAR");
+
+        SubRegistrarProducto.setText("Productos");
+        SubRegistrarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SubRegistrarProductoActionPerformed(evt);
+            }
+        });
+        jMenu3.add(SubRegistrarProducto);
+
+        jMenuBar1.add(jMenu3);
 
         jMenu1.setText("ELIMINAR");
 
@@ -45,9 +82,21 @@ public class BarraMenus extends javax.swing.JFrame {
         });
         jMenu1.add(SubEliminarProductos);
 
+        jMenu7.setText("jMenu7");
+        jMenu1.add(jMenu7);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("ACTUALIZAR");
+
+        SubActualizarProducto.setText("Producto");
+        SubActualizarProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SubActualizarProductoMouseClicked(evt);
+            }
+        });
+        jMenu2.add(SubActualizarProducto);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -56,11 +105,11 @@ public class BarraMenus extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 609, Short.MAX_VALUE)
+            .addComponent(Escritorio)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 372, Short.MAX_VALUE)
+            .addComponent(Escritorio)
         );
 
         pack();
@@ -71,6 +120,18 @@ public class BarraMenus extends javax.swing.JFrame {
          ventana.setVisible(true);
          this.setVisible(false);
     }//GEN-LAST:event_SubEliminarProductosMouseClicked
+
+    private void SubActualizarProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubActualizarProductoMouseClicked
+         LoginInicio ventana = new LoginInicio();
+         ventana.setVisible(true);
+         this.setVisible(false);
+    }//GEN-LAST:event_SubActualizarProductoMouseClicked
+
+    private void SubRegistrarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubRegistrarProductoActionPerformed
+         SubRegistrarProducto ventana = new SubRegistrarProducto();
+         Escritorio.add(ventana);
+         ventana.show();
+    }//GEN-LAST:event_SubRegistrarProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -105,12 +166,40 @@ public class BarraMenus extends javax.swing.JFrame {
                 new BarraMenus().setVisible(true);
             }
         });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
     }
+    
+    
+    
+    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane Escritorio;
+    private javax.swing.JMenu SubActualizarProducto;
     private javax.swing.JMenu SubEliminarProductos;
+    private javax.swing.JMenuItem SubRegistrarProducto;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
     // End of variables declaration//GEN-END:variables
 }
