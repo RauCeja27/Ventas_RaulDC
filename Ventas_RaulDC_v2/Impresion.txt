@@ -1,0 +1,12 @@
+================================
+        FACTURA DE VENTA        
+ ID Venta:    502               
+ ID Producto: 101               
+ Nombre Prod: Mermelada Fresa   
+ Precio:      140               
+ Cantidad:    3                 
+ Importe:     420               
+ Fecha Venta: 2023-08-13        
+                                
+                                
+                                
